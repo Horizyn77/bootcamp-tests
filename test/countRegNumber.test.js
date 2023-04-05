@@ -8,4 +8,7 @@ describe("Testing countRegNumber", function(){
     it("should return 5 when passed with 5 registration numbers", function(){
         assert.equal(5, countRegNumber("CA 182736,CY 523519,CJ 812328,CA 42665,AA 12 RT GP"));
     });
+    it("should return 0 when passed with an empty string", function(){
+        assert.equal(0, countRegNumber(""));
+    });
 });

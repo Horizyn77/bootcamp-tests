@@ -14,4 +14,10 @@ describe("Testing countAllFromTown", function() {
         
         assert.equal(4, fromBellville);
     });
+    it("should return 0 when 0 registration numbers from Cape Town is passed", function() {
+        var fromCapeTown = countAllFromTown('CY 124,CY 567,CY 345, CY 456,CL 341, CF 456','CA')
+        
+        assert.equal(0, fromCapeTown);
+    });
+
 });

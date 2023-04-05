@@ -44,4 +44,16 @@ describe("Testing findItemsOver20", function() {
         
         assert.deepEqual(results, findItemsOver20(itemList));
     });
+    it("should return an empty array when passed with 0 items over 20", function() {
+        var itemList = [
+            {name : 'apples', qty : 6},
+            {name : 'pears', qty : 15},
+            {name : 'bananas', qty : 17},
+            {name : 'apples', qty : 3},
+        ];
+
+        var results = [];
+        
+        assert.deepEqual(results, findItemsOver20(itemList));
+    });
 });

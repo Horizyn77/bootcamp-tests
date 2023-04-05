@@ -8,4 +8,7 @@ describe("Testing totalPhoneBill", function() {
     it("should return R1.30 when 2 sms's is passed", function() {
         assert.equal("R1.30", totalPhoneBill("sms, sms"));
     });
+    it("should return R0.00 when 0 calls and sms's is passed", function() {
+        assert.equal("R0.00", totalPhoneBill(""));
+    });
 });

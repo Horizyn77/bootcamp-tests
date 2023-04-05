@@ -1,6 +1,7 @@
 function countRegNumber(regNumbers) {
     var numberOfRegNums = regNumbers.split(",").length;
+    if (regNumbers === "") {
+      return 0;
+    } 
     return numberOfRegNums;
   }
-  
-  console.log(countRegNumber('CA 42665, AA 12 RT GP'));
